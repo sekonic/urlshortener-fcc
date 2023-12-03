@@ -66,7 +66,6 @@ app.post('/api/shorturl', async (req, res) => {
           url: url,
         };
         let result = await ShortUrl.create(newShortUrl);
-        console.log(result);
         response = {
           original_url: url,
           short_url: count,
